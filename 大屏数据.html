@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/4.8.0/echarts.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts-gl/1.0.0/echarts-gl.min.js"></script>
+    <script src="./assets/js/fuzhou.js"></script>
+    <style>
+        .echart {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="html">
+        <header>
+            <div class="action1">
+
+            </div>
+            <div class="title">
+                <span><img class="logo" src="./assets/img/logo-zmzk.png" alt="">芝麻智科能耗监测平台</span>
+            </div>
+            <div class="action2">
+                <!-- 消息通知 -->
+                <!-- admin下拉框 -->
+                <!-- 退出 -->
+            </div>
+        </header>
+        <main>
+            <div class="box cell cell-1">
+                <!-- 按钮 -->
+                <div class="button-group">
+                    <input class="radio-input" type="radio" value="day" id="button1_1" name="button1" checked="checked">
+                    <input class="radio-input" type="radio" value="month" id="button1_2" name="button1">
+                    <input class="radio-input" type="radio" value="year" id="button1_3" name="button1">
+                    <label class="button" for="button1_1">日</label>
+                    <label class="button" for="button1_2">月</label>
+                    <label class="button" for="button1_3">年</label>
+                </div>
+                <div id="cell1_echart" class="echart"></div>
+                <div class="echart1-info">
+                    <ul id="cell1_ul" class="echart1-info-ul">
+
+                    </ul>
+                </div>
+
+            </div>
+            <div id="cell2_echart" class="echart cell cell-2">
+                <!-- <div  class=""></div> -->
+            </div>
+            <div class="box cell cell-3">
+                <!-- 按钮 -->
+                <div class="button-group">
+                    <input class="radio-input" type="radio" id="button2_1" name="button2" checked="checked">
+                    <input class="radio-input" type="radio" id="button2_2" name="button2">
+                    <input class="radio-input" type="radio" id="button2_3" name="button2">
+                    <label class="button" for="button2_1">
+                        <svg t="1604019565580" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" p-id="3222" width="10" height="4">
+                            <path
+                                d="M410.36 957.13c-15.41 0-31.07-3.81-45.76-11.67-39.92-21.32-59.06-65.06-47.64-108.83l53.2-203.96-77.96-31.17c-10.35-4.15-18.22-8.87-24.83-14.86-40.74-36.82-44.76-97.04-9.13-137.09L572.47 96.02c26.69-30.01 68.42-37.43 103.83-18.53 35.42 18.94 52.4 57.78 42.25 96.64l-64.52 247.2 78.03 31.22c10.29 4.1 18.21 8.83 24.88 14.92 40.61 36.82 44.6 97 9.05 137L481.4 924.6c-18.93 21.32-44.63 32.53-71.04 32.53z m202.83-824.91L298.96 485.75c-13.39 15.06-16.2 41.36 4.97 60.48 1.69 1.53 4.47 3.05 8.54 4.7l122.55 48.99-65.33 250.46c-6.08 23.31 6.64 39.57 20.58 47.02 13.88 7.4 34.44 8.96 50.4-9.01l284.6-320.15c13.36-15.01 16.16-41.31-4.95-60.45-1.68-1.53-4.51-3.07-8.46-4.65l-122.7-49.08 76.67-293.71c4.51-17.27-4.91-29.31-15.23-34.83-10.32-5.5-25.54-6.64-37.41 6.7z"
+                                fill="#FEC069" p-id="3223">
+                            </path>
+                        </svg>
+                    </label>
+                    <label class="button" for="button2_2">
+                        <svg t="1604020271076" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" p-id="6742" width="10" height="4">
+                            <path
+                                d="M136.533333 634.246095C136.533333 567.588571 169.935238 481.913905 229.571048 379.562667c23.747048-40.706438 51.326781-83.412114 81.978514-127.405105A2906.199771 2906.199771 0 0 1 429.173029 95.583086a2774.250057 2774.250057 0 0 1 49.659123-60.172191l3.969219-4.632381L507.240838 2.633143l24.517486 28.145371 3.959466 4.642134c3.140267 3.666895 6.787657 7.9872 10.942172 12.873142a3313.176381 3313.176381 0 0 1 38.785219 47.289296 2940.362362 2940.362362 0 0 1 117.613714 156.574476c30.593219 43.99299 58.172952 86.698667 81.92 127.405105 59.63581 102.351238 93.037714 188.025905 93.037715 254.683428 0 210.690438-165.800229 381.834971-370.775772 381.834972C302.343314 1016.081067 136.533333 844.936533 136.533333 634.246095m343.186286-497.566476a2801.859048 2801.859048 0 0 0-114.922057 153.102629c-29.696 42.569143-56.32 83.792457-79.160076 122.958019-54.203733 92.94019-84.085029 169.662171-84.085029 221.505828 0 174.947962 137.069714 316.386743 305.688381 316.386743 168.686933 0 305.7664-141.438781 305.7664-316.386743 0-51.843657-29.891048-128.565638-84.094781-221.505828-22.840076-39.165562-49.464076-80.388876-79.091809-122.958019a2869.150476 2869.150476 0 0 0-114.93181-153.112381 4546.998857 4546.998857 0 0 0-27.648-33.811505c-8.572343 10.435048-17.788343 21.7088-27.511467 33.811505"
+                                p-id="6743" fill="#28B3DF"></path>
+                            <path
+                                d="M507.270095 902.397562c-142.833371 0-258.6624-116.90179-258.6624-261.246781 0-144.286476 134.456076-71.241143 258.6624 0 124.781714 71.553219 258.6624-144.286476 258.6624 0 0 144.335238-115.829029 261.246781-258.6624 261.246781"
+                                p-id="6744" fill="#28B3DF"></path>
+                        </svg>
+                    </label>
+                    <label class="button" for="button2_3">
+                        <svg t="1604020971054" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" p-id="7046" width="10" height="4">
+                            <path
+                                d="M818.17 564.82a424.093 424.093 0 0 0-18.49-97.42c-14.73-45.8-36.75-89.56-61.94-123.22-7.12-9.21-20.19-11.26-29.79-4.67a19.828 19.828 0 0 0-8.59 13.19c-0.93 5.39 0.41 10.92 3.69 15.3 22.57 30.16 42.39 69.73 55.84 111.45 9 28.65 14.6 58.26 16.69 88.22 8.19 112.22-39.99 203.9-133.19 255.91-15.27-120.25-112.62-159.5-117.1-161.27-6-2.32-12.71-1.92-18.39 1.1-84.74 45.1-109.47 120.74-116.61 163.04-83.86-42.25-134.84-121.84-134.84-213.54 0-61.79 32.12-119.04 98.17-174.95 8.78-7.47 17.74-14.78 26.68-22.09 48.51-39.69 98.7-80.66 124.01-143.04 2.75-6.72 5.14-12.84 7.17-18.33 44.68 30.12 141.4 111.4 172.8 266.91 2.22 11.11 13.47 18.35 24.98 16.2 11.58-2.12 19.17-12.84 16.92-23.93-43.38-214.94-199.3-299.83-217.02-308.86-0.58-0.33-1.21-0.61-1.87-0.94-10.47-4.83-22.89-0.69-28.36 9.46-1.4 2.75-2.16 5.78-2.2 8.87-2.01 7.54-10.32 30.89-12.21 35.79-21.41 52.81-65.41 88.72-111.97 126.77-9.13 7.47-18.25 14.94-27.24 22.53-74.71 63.26-112.55 132.44-112.55 205.6 0 118.03 72.07 218.89 188.09 263.13a22.005 22.005 0 0 0 19.94-2.15 20.186 20.186 0 0 0 9.34-17.04c-0.04-4.15 0.3-99.22 87.94-152.31 23.11 12.75 83.62 55.19 83.62 151.56 0 6.95 3.69 13.47 9.78 17.2 6.09 3.76 13.77 4.34 20.38 1.42 126.83-55.05 196.49-170.94 186.32-309.89"
+                                p-id="7047" fill="#EA5E63"></path>
+                        </svg>
+                    </label>
+                </div>
+                <div id="cell3_echart" class="echart"></div>
+            </div>
+            <div class="box cell cell-4">
+                <div id="cell4_echart" class="echart"></div>
+            </div>
+            <div class="cell cell-5">
+                <div class="cell-5-table">
+                    <!-- 表头 -->
+                    <ul class="table-head">
+                        <li style="width: 120px;text-align: center;">项目</li>
+                        <li>电耗(kWh)</li>
+                        <li>水耗(m³)</li>
+                        <li>气耗(m³)</li>
+                    </ul>
+                    <!-- 表格内容 -->
+                    <ul id="cell5_ul" class="table-body ">
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="box cell cell-6">
+                <div id="cell6_echart" class="echart"></div>
+                <ul class="cell6-div">
+                    <li>
+                        节能目标:<br />123万kWh
+                    </li>
+                    <li>
+                        节能目标:<br />123万kWh
+                    </li>
+                    <li>
+                        节能目标:<br />123万kWh
+                    </li>
+                </ul>
+            </div>
+            <div class="box cell cell-7">
+                <!-- 按钮 -->
+                <div class="button-group">
+                    <input class="radio-input" type="radio" value="yesterday" id="button3_1" name="button3"
+                        checked="checked">
+                    <input class="radio-input" type="radio" value="nextmonth" id="button3_2" name="button3">
+                    <label class="button" for="button3_1">昨日</label>
+                    <label class="button" for="button3_2">下月</label>
+                </div>
+                <ul id="cell7_ul" class="cell7-ul">
+
+                </ul>
+            </div>
+            <div class="box cell cell-8">
+                <div id="cell8_echart" class="echart"></div>
+            </div>
+            <div class="box cell cell-9">
+                <div class="cell9-div">
+                    <p><img class="logo" src="./assets/img/logo-zmzk.png" alt=""> 芝麻智科能耗监测平台</p>
+                    <ul id="cell9_ul">
+
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- 初始化页面样式+小标题 -->
+    <script src="./assets/js/initPage.js"></script>
+    <!-- cell1,cell3,cell4,cell6,cell8 -->
+    <script src="./assets/js/echart.js"></script>
+    <!-- cell7-->
+    <script src="./assets/js/list.js"></script>
+    <!-- 地图 -->
+    <script src="./assets/js/map.js"></script>
+
+    <!-- 页面onload时执行 -->
+    <script>
+        window.onload = () => {
+            initPage();
+            initEchart(echart1, option1);
+            setEachart1();
+            initEchart(echart2, option2);
+            initEchart(echart3, option3);
+            initEchart(echart4, option4);
+            initEchart(echart6, option6);
+            initEchart(echart8, option8);
+            changeValue_cell1_ul();
+            changeValue_cell5_ul();
+            changeValue_cell7_ul();
+            changeValue_cell9_ul();
+        }
+        function setEachart1() {
+            var value1 = (Math.random() * 360).toFixed(0) - 0;
+            var color1 = [[value1 / 360, '#DEAB50'], [1, '#08609077']];
+            var value2 = (Math.random() * 360).toFixed(0) - 0;
+            var color2 = [[value2 / 360, '#2EADCE'], [1, '#08609077']];
+            var value3 = (Math.random() * 360).toFixed(0) - 0;
+            var color3 = [[value3 / 360, '#D47463'], [1, '#08609077']];
+            option1.series[0].data[0].value = value1;
+            option1.series[0].axisLine.lineStyle.color = color1;
+            option1.series[2].data[0].value = value2;
+            option1.series[2].axisLine.lineStyle.color = color2;
+            option1.series[4].data[0].value = value3;
+            option1.series[4].axisLine.lineStyle.color = color3;
+            echart1.setOption(option1, true);
+        }
+    </script>
+</body>
+
+</html>
