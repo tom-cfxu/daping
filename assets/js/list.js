@@ -1,8 +1,8 @@
 
 data_cell1 = [
-    { iconUrl: './assets/img/icon/water.png', title: '今日用水(m³)', value: '114800', chainRatio: '3.1', yearBasis: '3.4' },
-    { iconUrl: './assets/img/icon/electricity.png', title: '今日用电(kWh)', value: '114800', chainRatio: '3.1', yearBasis: '3.4' },
-    { iconUrl: './assets/img/icon/gas.png', title: '今日用气(m³)', value: '114800', chainRatio: '3.1', yearBasis: '3.4' },
+    { iconUrl: 'http://114.116.51.4:8044/assets/img/icon/water.png', title: '今日用水(m³)', value: '114800', chainRatio: '3.1', yearBasis: '3.4' },
+    { iconUrl: 'http://114.116.51.4:8044/assets/img/icon/electricity.png', title: '今日用电(kWh)', value: '114800', chainRatio: '3.1', yearBasis: '3.4' },
+    { iconUrl: 'http://114.116.51.4:8044/assets/img/icon/gas.png', title: '今日用气(m³)', value: '114800', chainRatio: '3.1', yearBasis: '3.4' },
 ];
 function changeValue_cell1_ul() {
     cell1_ul = document.getElementById('cell1_ul');
@@ -19,12 +19,12 @@ function changeValue_cell1_ul() {
                             </div>
                             <p>
                                 环比
-                                <img class="cell1-li-p-icon" src="./assets/img/icon/arrow-down.png" alt="">
+                                <img class="cell1-li-p-icon" src="http://114.116.51.4:8044/assets/img/icon/arrow-down.png" alt="">
                                 ${item.chainRatio}% 
                             </p>
                             <p>
                                 同比
-                                <img class="cell1-li-p-icon" src="./assets/img/icon/arrow-up.png" alt="">
+                                <img class="cell1-li-p-icon" src="http://114.116.51.4:8044/assets/img/icon/arrow-up.png" alt="">
                                 ${item.yearBasis}%
                             </p>
                         </li>
@@ -33,9 +33,9 @@ function changeValue_cell1_ul() {
     cell1_ul.innerHTML = result;
 }
 data_cell7 = [
-    { iconUrl: './assets/img/icon/icon-electricity.png', key1: '用量', value1: '1002040', unit1: 'kwh', key2: '费用', value2: '1250000', unit2: '元' },
-    { iconUrl: './assets/img/icon/icon-water.png', key1: '用量', value1: '32300', unit1: 'm³', key2: '费用', value2: '90024', unit2: '元' },
-    { iconUrl: './assets/img/icon/icon-gas.png', key1: '用量', value1: '400', unit1: 'm³', key2: '费用', value2: '2340', unit2: '元' },
+    { iconUrl: 'http://114.116.51.4:8044/assets/img/icon/icon-electricity.png', key1: '用量', value1: '1002040', unit1: 'kwh', key2: '费用', value2: '1250000', unit2: '元' },
+    { iconUrl: 'http://114.116.51.4:8044/assets/img/icon/icon-water.png', key1: '用量', value1: '32300', unit1: 'm³', key2: '费用', value2: '90024', unit2: '元' },
+    { iconUrl: 'http://114.116.51.4:8044/assets/img/icon/icon-gas.png', key1: '用量', value1: '400', unit1: 'm³', key2: '费用', value2: '2340', unit2: '元' },
 ];
 function changeValue_cell7_ul() {
     cell7_ul = document.getElementById('cell7_ul');
